@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="aside-menu" id="aside-menu">
+        <div class="enlaces">
+            <a href="./index.html">Inicio</a>
+            <a href="./variables.html">Variables</a>
+            <a href="./datos.html">Datos</a>
+            <a href="./operadores.html">Operadores</a>
+            <a href="./condicionales.html">Condicionales</a>
+            <a href="#">Bucles</a>
+            <a href="./funciones.html">Funciones</a>
+            <a href="./arrays.html">Arrays</a>
+            <a href="./objetos.html">Objetos</a>
+        </div>
+    </div>
+    <header>
+        <div class="sub-header">
+            <button class="abrir" type="button" id="btn-menu-abrir" onclick="abrir()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="cerrar" type="button" id="btn-menu-cerrar" onclick="cerrar()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="todo2">
+
+        <div class="seccion">
+            <h2 class="titulo">Bucles e iteraciones</h2>
+            <h2 class="sub-titulo">For</h2>
+            <p>
+                Un bucle <b>for</b> se repite hasta que la condición especificada sea false: <br> <br>
+                <b>for(ExpresiónInicial; Condición; ExpresiónIncremento){ sentencia }</b>
+            </p>
+            <div class="img">
+                <img src="./img/img_006.png" alt="">
+            </div>
+            <p>
+                <b>ExpresiónInicial: </b>Si existe, seejecuta. Esta expresión inicializa uno o más contadores del bucle. Aqui tambien se puden declarar variables. <br> <br>
+                <b>Condición: </b>Si el valor es true, se ejecuta la sentencia del bucle; si es false, el bucle finaliza. <br> <br>
+                <b>ExpresiónIncremento: </b>Aumenta el valor de expresión Inicial, y vuelve al paso 2 (condición). <br> <br>
+                <b>Sentencia: </b>Se ejecuta si la condición es true.
+            </p>
+            <h2 class="sub-titulo">While</h2>
+            <p>
+                Ejecuta sus sentencias mientras la condición sea verdadera. <br> <br>
+                <b>while(condición){sentencia}</b>
+            </p>
+            <div class="img">
+                <img src="./img/img_007.png" alt="">
+            </div>
+            <p>
+                En cada iteración, el bucle incrementa <b>i</b>, y añade ese valor a <b>x</b>: <br> <br>
+                Después de la primera iteración: <b>i=1</b> y <b>x=1</b> <br>
+                Después de la segunda iteración: <b>i=2</b> y <b>x=3</b> <br>
+                Después de la tercera iteración: <b>i=3</b> y <b>x=6</b> <br> <br>
+                Cuando el bucle llega a i=10, la condición ya no séra verdadera y no se ejecutará la sentencia.
+            </p>
+            <p>
+                Evite los bucles infinitos. Asegurese de que la condición en un bucle llegue finalmente a ser flase, de otra forma, el bucle nunca terminará.
+            </p> 
+            <h2 class="sub-titulo">Do...While</h2>
+            <p>
+                Se repite hasta que la condición especificada sea falsa. <br> <br>
+                <b>do{sentencia}while(condición)</b>
+            </p>
+            <div class="img">
+                <img src="./img/img_008.png" alt="">
+            </div>
+            <p>
+                El bucle <b>do</b> itera al menos una vez y vuelve a hacerlo mientras i sea menor a 5.
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Ola kk</h2>
+            <p>
+ 
+            </p>
+            <div class="img">
+                <img src="" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>
+            &copy; Copyrights 2021 - <b>Desing by Alex :3</b>
+        </p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

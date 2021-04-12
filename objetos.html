@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="aside-menu" id="aside-menu">
+        <div class="enlaces">
+            <a href="./index.html">Inicio</a>
+            <a href="./variables.html">Variables</a>
+            <a href="./datos.html">Datos</a>
+            <a href="./operadores.html">Operadores</a>
+            <a href="./condicionales.html">Condicionales</a>
+            <a href="./bucles.html">Bucles</a>
+            <a href="./funciones.html">Funciones</a>
+            <a href="./arrays.html">Arrays</a>
+            <a href="#">Objetos</a>
+        </div>
+    </div>
+    <header>
+        <div class="sub-header">
+            <button class="abrir" type="button" id="btn-menu-abrir" onclick="abrir()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="cerrar" type="button" id="btn-menu-cerrar" onclick="cerrar()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="todo2">
+
+        <div class="seccion">
+            <h2 class="titulo">Objetos</h2>
+            <p>
+                Un <b>objeto</b> es una colección de datos relacionados, que generalmente consta de variables y funciones, que se denominan <b>propiedades</b> y <b>métodos</b> cuando están dentro de objetos.
+            </p>
+            <p>
+                Hay dos formas de crear un objeto: <br> <br>
+                <b>var objeto = new Object();</b>    y    <b>var objeto{  };</b> <br> <br>
+                La forma de agregarles propiedades seria: <br> <br>
+            </p>
+            <div class="img">
+                <img src="./img/img_012.png" alt="">
+            </div>
+            <p>
+                Podemos acceder a las propiedades de un objeto através de: 
+            </p>
+            <p>
+                <b>Notación de puntos:</b> <br> 
+                persona.nombre <br>
+                persona.edad <br> <br> <br>
+                <b>Notación de corchetes:</b> <br> 
+                persona['nombre'] <br>
+                persona['edad'] <br> <br> <br>
+                <b>Podemos actualizar los valores de un objeto:</b> <br> 
+                persona.edad=31;<br>
+                persona['nombre']='Belen'; <br> <br> <br>
+                <b>Podemos crear mienbros completamente nuevos:</b> <br> 
+                persona.pais= 'canada'; <br>
+                persona['ojos']='avellana';
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">This</h2>
+            <p>
+                Se refiere al objeto actual en el que se está escribiendo el código. <br> <br>
+                <b>
+                    saludo : function (){ <br>
+                        alert('Buen dia'+ this.nombre + '.') <br>
+                    }
+                </b>
+            </p>
+            <p>
+                <b>This</b> es muy útil a la hora de crear constructores, etc. Ya que aseguraque se usen los valores corretos. Ejemplo: con dos instancias de objetos persona.
+            </p> 
+            <div class="img">
+                <img src="./img/img_013.png" alt="">
+            </div>
+            <p>
+                En las <b>arrow functions</b>, el "this" refiere a "window".
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">¿Qué es un constructor?</h2>
+            <p>
+                Es un método llamado en el momento de la creación de instancias. En Javascript, la función sirve como el constructor del objeto, por lo que no hay necesidad de definir explicitamente un método constructor. <br>
+                EL constructor se usa para establecer las propiedades del objeto o para llamar a los métodos para preparar el objeto para su uso.
+            </p>
+            <div class="img">
+                <img src="./img/img_014.png" alt="">
+            </div>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Clases</h2>
+            <p>
+                Considerada una mejora sintatica sobre la herencia. Proveen una sintaxis más clara y simple para crear objetos y lidiar con la herencia.
+            </p> 
+            <p><b>Dos componentes</b></p> <br>
+            <p>
+                <b>Declaración de clases: </b>Para declarar una clase se utiliza la palabra reservada <b>class</b>, y un nombre para la clase.
+            </p>
+            <div class="img">
+                <img src="./img/img_015.png" alt="">
+            </div> 
+            <p> 
+                <b>Expresión de clases: </b>Otra manera de definir una clase. Pueden ser nombradas o anonimas.
+            </p>
+            <div class="img">
+                <img src="./img/img_016.png" alt="">
+            </div>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Extends</h2>
+            <p>
+                La palabra extends es usada en declaraciones o expresiones de clase para crear una clase hija
+            </p>
+            <div class="img">
+                <img src="./img/img_017.png
+                " alt="">
+            </div> 
+            <p>
+                El método <b>constructor</b> es un método especial para crear e inicializar un objeto creado con una clase. Sólo se puede haber método especial con el nombre "constructor" en una clase.
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Función callback</h2>
+            <p>
+                Función que se pasa a otra función como argumento y que se ejecuta dentro de ésta.
+            </p>
+            <div class="img">
+                <img src="./img/img_018.png" alt="">
+            </div> 
+            <p>
+                Este ejemplo es un callback sincrona, ya que se ejecuta inmediatamente. <br>
+                A menudo, los callbacks se utilizan para continuar con la ejecución del código después de que se haya completado una operación asincrona.
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Asincronismo</h2> <br>
+            <h2 class="sub-titulo">¿Qué es?</h2>
+            <p>
+                Es la acción que no ocurre al mismo tiempo.
+            </p>
+            <div class="img">
+                <img src="./img/img_019.png" alt="">
+            </div> 
+            <div class="img">
+                <img src="./img/img_020.png" alt="">
+            </div>
+            <p>
+                <b>setTimeOut: </b> Función asincrona que programa la ejecución de un callback una vez transcurrido cierto tiempo (1000ms = 1 segundo). <br>
+                Recuerda que un callback en un loop de eventos espera su turno. <br>
+                Incluso si el tiempo fuese 0ms, no significa que el callback se ejecutara inmediatamente.
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Promesas</h2>
+            <p>
+                Es el resultado de una operación asincrona, el cual podria estar disponible ahora o en el futuro. Esta operación podrá finalizar con éxito o con fallos: Para esto, a una promesa le adjuntamos un par de callbacks: 
+            </p>
+            <p>
+                Para indicarle a la promesa que debe hacer si todo va bien. <br> 
+                <b>Resolución de la promesa o resolve</b> <br> <br>
+                Para indicarle a la promesa que debe hacer en caso de fallo. <br>
+                <b>Rechazo de la promesa o reject</b> <br> <br>
+                Para obtener el resultado de una promesda puede utilizarse su método <b>then</b>
+            </p>
+            <div class="img">
+                <img src="./img/img_021.png" alt="">
+            </div>
+            <p>
+                Una promesa tendrá 3 estados posiibles: <br> <br>
+                <b>PENDING: </b> Todavia no hay resultado. <br>
+                <b>FULFILLED: </b>Se ejecutó exitosamente. <br>
+                <b>REJETED: </b>En el cual falló.
+            </p> <br> <br>
+            <p>
+                El método <b>then</b>, además, devuleve otra promesa, que resulve al valor devuelto por la función original, o si esta tambien devuelve una rpomesa, espera por la misma, y luego resuelve a su resultado. <br>
+                Es frecuente consumir más de una promesa a la vez (y que se ejecuten en paralelo). <br> <br>
+                <b>Promise.all(): </b> Acepta un array de promesas y devuelve una nueva promesa cuya resolución con éxito una vez que todas las promesas originales se hayan resuleto originalmente, o en caso de fallo, será rechazada en cuanto una de las promesas originales sea rechazada. <br> <br>
+                <b>Promise.race(): </b>La promesa compuesta que devuelve <b>race()</b> será resuelta tan pronto como se resuelva alguna de las promesas originales, ya sea con éxito o con fallo.
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Async - Await</h2>
+            <p>
+                La función <b>async</b> implicitamente devuelve una promesa y puede, en su cuerpo, esperar a que otras promesas se resuelvan de manera que simula ser sincrona, utilizando la keyword <b>await</b>. <br>
+                Para hacer que una función dea asincrona se indica <b>async</b> antes de function. Cuando la función es llamada, devuelve una promesa. En cuanto el cuerpo de la misma devuelve algo, esa promesa es resuelta. Si devuelve una exepción, la promesa es rechazada. <br>
+                Dentro de <b>async</b>, podemos utilizar <b>await</b> antes de una expresión para esperar a que una promesa sea resuelta antes de continuar con la ejecución de la función.
+            </p> 
+            <div class="img">
+                <img src="./img/img_022.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            &copy; Copyrights 2021 - <b>Desing by Alex :3</b>
+        </p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

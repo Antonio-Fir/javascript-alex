@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="aside-menu" id="aside-menu">
+        <div class="enlaces">
+            <a href="./index.html">Inicio</a>
+            <a href="./variables.html">Variables</a>
+            <a href="./datos.html">Datos</a>
+            <a href="./operadores.html">Operadores</a>
+            <a href="./condicionales.html">Condicionales</a>
+            <a href="./bucles.html">Bucles</a>
+            <a href="./funciones.html">Funciones</a>
+            <a href="#">Arrays</a>
+            <a href="./objetos.html">Objetos</a>
+        </div>
+    </div>
+    <header>
+        <div class="sub-header">
+            <button class="abrir" type="button" id="btn-menu-abrir" onclick="abrir()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="cerrar" type="button" id="btn-menu-cerrar" onclick="cerrar()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="todo2">
+
+        <div class="seccion">
+            <h2 class="titulo">Arrays</h2>
+            <p>
+                Los arrays son un conjunto de datos ordenados por posiciones, asociados en una sola variable. <br>
+                Los datos pueden ser de cualquier tipo de dato. <br> <br>
+                <b>Ejemplo:</b> <br>
+                var persona = ['mayo', 22, true];
+            </p>
+            <p>
+                Este array contiene 3 elementos y una longitud de 3.
+            </p> 
+            <p>var hobbies = new Array(5);</p> 
+            <p>
+                Dentro de los paréntesis o mejor llamado constructor, se establece el número de elementos que puede contener este array. A su vez, se puede indicar los elementos del array.
+            </p>
+            <p>
+                var hobbies = new Array('surfear', 'dibujar');    ó    hobbies=['surfear', 'dibujar'];
+            </p> 
+            <p>Así fijamos los datos en el array.</p> 
+
+            <p><b>Acceder a un elemento array</b></p>
+            <p>Con el ejemplo:</p> 
+            <p>
+                var hobbies=['surfear', 'dibujar', 'escribir']; <br>
+                <b>hobbies[1]; </b>//dibujar
+            </p> 
+            <p>
+                Hay que tener en cuenta que las posiciones comienzan desde cero (Ej. <b>hobbies[0]; //surfear</b>).
+            </p> 
+            <p><b>Añadir elemento al final</b></p>
+            <p>
+                hobbies.<b>push</b>('escalar', 'codear'); <br>
+                //['surfear', 'dibujar', 'escribir', 'escalar', 'codear'];
+            </p> 
+            <p><b>Eliminar elementos del final</b></p>
+            <p>
+                hobbies.<b>pop</b>(); <br>
+                //elimina 'codear'
+            </p> 
+
+            <p><b>Añadir elemento al inicio</b></p>
+            <p>
+                hobbies.<b>unshift</b>('correr'); <br>
+                //agrega 'correr' al inicio del array.
+            </p> 
+
+            <p><b>Conocer el número de elementos</b></p>
+            <p>
+                hobbies.<b>length</b>; <br>
+                //Mostrará 5
+            </p> 
+
+            <h2 class="sub-titulo">Metodos del array</h2>
+            <p>
+                El metodo <b>filter()</b> crea un nuevo array con todos los elementos que cumplan con la condición por la función dada.
+            </p>
+            <div class="img">
+                <img src="./img/img_009.png" alt="">
+            </div>
+            <p>
+                <b>Sintaxis</b> <br>
+                var newArray=arr.filter(callback(currentValue[index[array]]));
+            </p>
+            <p>
+                <b>callback: </b>Función que comprueba cada elemento del array para ver si cumple la condición. Debe retornar un valor: true o false. <br>
+                <b>currentValue: </b>item actual del array. <br>
+                <b>index: </b>indice del item actual del array. <br>
+            </p> 
+            <p>
+                El método <b>map()</b> crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
+            </p>
+            <div class="img">
+                <img src="./img/img_010.png" alt="">
+            </div>
+            <p>
+                El método <b>reduce()</b> aplica una función a un acumulador y a cada valor de un array (de izquierda a derecha) para reducirlo a un único valor.
+            </p> 
+            <div class="img">
+                <img src="./img/img_011.png" alt="">
+            </div> 
+            <p>
+                El método reduce se encarga de recorrer todos los elementos del array e ir acumulando sus valores (o alguna operación diferente) y sumarlo todo, para devolver su resultado final.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            &copy; Copyrights 2021 - <b>Desing by Alex :3</b>
+        </p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

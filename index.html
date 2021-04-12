@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="aside-menu" id="aside-menu">
+        <div class="enlaces">
+            <a href="#">Inicio</a>
+            <a href="./variables.html">Variables</a>
+            <a href="./datos.html">Datos</a>
+            <a href="./operadores.html">Operadores</a>
+            <a href="./condicionales.html">Condicionales</a>
+            <a href="./bucles.html">Bucles</a>
+            <a href="./funciones.html">Funciones</a>
+            <a href="./arrays.html">Arrays</a>
+            <a href="./objetos.html">Objetos</a>
+        </div>
+    </div>
+    <header>
+        <div class="sub-header">
+            <button class="abrir" type="button" id="btn-menu-abrir" onclick="abrir()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="cerrar" type="button" id="btn-menu-cerrar" onclick="cerrar()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="presentacion">
+            <p class="re">
+                JAVA
+            </p>
+            <p class="sub-re">
+                SCRIPT
+            </p>
+            <div class="caja-autor">
+                <img src="./img/or.png" alt="">
+                <p>by: Alex Elier</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="todo">
+
+        <div class="seccion">
+            <div class="titulo">
+                <p class="na">
+                    ¿Que es
+                </p> 
+                <p class="ne">
+                    Javascript?
+                </p>
+            </div>
+            <div class="info">
+                <p class="centrar">
+                    Javascript es un leguaje de scripting multiplataforma y orientado a objetos. <br>
+                    Recuerda que <b>Javascript</b> no es lo mismo que <b>Java</b>
+                </p>
+            </div>
+        </div>
+
+        <div class="flex1">
+            <div class="seccion">
+                <div class="titulos">
+                   <h2>La consola de Javascript</h2>
+                </div>
+                <div class="info">
+                    <p>
+                        Muestra información sobre la página web que se esta ejecutando en ese momento, y tambien incluye la línea de comando que puedes usar para ejecutar expresiones Javascript() en la página actual. <br>
+                        La función <b>concole.log()</b> muestra la información proporcionada en la consola de Javascript. <br> <br>
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="./img/img_001.png" alt="">
+                </div>
+            </div>
+
+            <div class="seccion">
+                <div class="titulos">
+                   <h2>Comentarios</h2>
+                </div>
+                <div class="info">
+                    <p>
+                        Javascript tiene dos tipos de comentarios:
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="./img/img_002.png" alt="">
+                </div>
+                <div class="info">
+                    <p>
+                        Los comentarios son anotaciones en el código fuentes de un programa que son ignoradas por el interprete. <br>
+                        Los comentarios deben usarse para describior aspectos importantes, por ejemplo aspectos que permitan una mejor comprensión del código.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="seccion">
+            <h2>Más temas</h2>
+        </div>
+
+        <div class="flex2">
+
+            <a href="./variables.html">
+                <div class="img">
+                    <i class="far fa-file-code"></i>
+                </div>
+                <p>
+                    Variables
+                </p>
+            </a>
+
+            <a href="./datos.html">
+                <div class="img">
+                    <i class="fas fa-database"></i>
+                </div>
+                <p>
+                    Datos
+                </p>
+            </a>
+
+            <a href="./operadores.html">
+                <div class="img">
+                    <i class="fas fa-divide"></i>
+                </div>
+                <p>
+                    Operadores
+                </p>
+            </a>
+
+            <a href="./condicionales.html">
+                <div class="img">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <p>
+                    Condicionales
+                </p>
+            </a>
+
+            <a href="./bucles.html">
+                <div class="img">
+                    <i class="fas fa-retweet"></i>
+                </div>
+                <p>
+                    Bucles
+                </p>
+            </a>
+
+            <a href="./funciones.html">
+                <div class="img">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <p>
+                    Funciones
+                </p>
+            </a>
+
+            <a href="./arrays.html">
+                <div class="img">
+                    <i class="fab fa-etsy"></i>
+                </div>
+                <p>
+                    Arrays
+                </p>
+            </a>
+
+            <a href="./objetos.html">
+                <div class="img">
+                    <i class="far fa-address-card"></i>
+                </div>
+                <p>
+                    Objetos
+                </p>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            &copy; Copyrights 2021 - <b>Desing by Alex :3</b>
+        </p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

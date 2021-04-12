@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="aside-menu" id="aside-menu">
+        <div class="enlaces">
+            <a href="./index.html">Inicio</a>
+            <a href="./variables.html">Variables</a>
+            <a href="#">Datos</a>
+            <a href="./operadores.html">Operadores</a>
+            <a href="./condicionales.html">Condicionales</a>
+            <a href="./bucles.html">Bucles</a>
+            <a href="./funciones.html">Funciones</a>
+            <a href="./arrays.html">Arrays</a>
+            <a href="./objetos.html">Objetos</a>
+        </div>
+    </div>
+    <header>
+        <div class="sub-header">
+            <button class="abrir" type="button" id="btn-menu-abrir" onclick="abrir()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="cerrar" type="button" id="btn-menu-cerrar" onclick="cerrar()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="todo2">
+
+        <div class="seccion">
+            <h2 class="titulo">Tipos de datos</h2>
+            <p>
+                <b>String: </b>Sevuenjcia de cáracteres que representan un valor. Ejemplo: "Hola".
+                <br>
+                <b>Boolean: </b> Valores "true" o "false".
+                <br>
+                <b>Null: </b>Denota valor nulo. Javascript es case-sensitive(null). null no es lo mismo 
+                que "Null", "NULL".
+                <br>
+                <b>Undefined: </b>Valor sin definir.
+                <br>
+                <b>Symbol: </b>Tipo de dato, cuyos casos son únicos e inmutables.
+                <br>
+                <b>Objet: </b> Objeto, puede contener más variables en su interior.
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">typeof</h2>
+            <p>
+                La función <b>typeof</b> es utilizada para obtener el tipo de dato que tiene una variable.Veamos unos ejemplos:
+            </p>
+            <div class="img">
+                <img src="./img/img_003.png" alt="">
+            </div>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Conversión de tipos de datos</h2>
+            <p>
+                Javascript es un lenguaje de tipo dinámico. Esto significa que, al declarar una variable,
+            no tienes que especificar el tipo de dato. <br>
+            Así, por ejemplo, puedes definir una variable de la siguiente manera: <br> <br>
+            var ejemplo = 55; <br> <br>
+            y luego, puedes asignarle un string a esa variable: <br> <br>
+            ejemplo = "¿Qué te paso, viejo? Antes eras chevere"; <br> <br>
+            Ya que es un lenguaje de tipo dinámico, esta asignación no causa un mensaje de error.
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Convertir string a números</h2>
+            <p>
+                En caso que un valor representando a un número esta en memoria como string:
+            </p>
+            <h2 class="titulo">parseInt()</h2>
+            <p>
+                [Retornará números enteros.] <br>
+                Sirve para "parsear" una cadena (string) e intentar obtener un valor numérico. <br> <br>
+                <b>Ejemplo:</b> <br>
+                var s = "1234"; <br>
+                var n = parceInt(s); //<b>1234</b>
+            </p>
+            <h2 class="titulo">parseFloat()</h2>
+            <p>
+                [El número siempre se interpreta como decimal] <br>
+                <br> <br>
+                <b>Ejemplo con parseInt:</b> <br>
+                var s = 3.14 <br>
+                var n = parseInt(s); //<b>3</b>
+                <br> <br>
+                <b>Ejemplo con parseFloat:</b> <br>
+                var n = parseFloat(s); //<b>3.14</b>  
+            </p>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+        <p>
+            &copy; Copyrights 2021 - <b>Desing by Alex :3</b>
+        </p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

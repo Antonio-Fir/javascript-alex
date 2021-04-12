@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="aside-menu" id="aside-menu">
+        <div class="enlaces">
+            <a href="./index.html">Inicio</a>
+            <a href="./variables.html">Variables</a>
+            <a href="./datos.html">Datos</a>
+            <a href="./operadores.html">Operadores</a>
+            <a href="#">Condicionales</a>
+            <a href="./bucles.html">Bucles</a>
+            <a href="./funciones.html">Funciones</a>
+            <a href="./arrays.html">Arrays</a>
+            <a href="./objetos.html">Objetos</a>
+        </div>
+    </div>
+    <header>
+        <div class="sub-header">
+            <button class="abrir" type="button" id="btn-menu-abrir" onclick="abrir()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="cerrar" type="button" id="btn-menu-cerrar" onclick="cerrar()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="todo2">
+
+        <div class="seccion">
+            <h2 class="titulo">Sentencias condicionales</h2>
+            <p>
+                Una sentencia condicional es un conjunto de comandos que se ejecutan si una condición es verdadera. Javascript soporta dos sentencias condicionales: <b>If...Else</b> y <b>Switch</b>
+            </p>
+            <h2 class="sub-titulo">If..Else</h2>
+            <p>
+                Se utiliza <b>If</b> para comprobar si la condición es verdadera. <br>
+                Se utilza <b>else</b> para ejecutar una sentencia si la condición es falsa.
+            </p>
+            <div class="img">
+                <img src="./img/img_004.png" alt="">
+            </div>
+            <p>
+                La condición puede ser cualquier espresión que evalúe un booleano: true o false. <br>
+                Puedes utilizar <b>else if</b> para evaluar múltiples condiciones.
+            </p>
+            <h2 class="sub-titulo">Valores falsos</h2>
+            <p>
+                Los siguientes valores se evalúan como <b>falsos</b>: <br> <br>
+                <b>false <br>undefined <br>null <br>0 <br>NaN <br>La cadena vacia (" ")</b> <br> <br>
+                El resto de valores, incluidos todos los objetos, son evaluados como verdaderos cuando son pasados a una sentencia condicional.
+            </p>
+            <h2 class="sub-titulo">Switch</h2>
+                <p>Condicional que permite hacer multiples operaciones, y tomar decisiones en función de distintos estados de las variables. <br>
+                Evalúa una expresión, comparando el valor de esa expresión con una instancia <b>case</b>, y ejecuta declaraciones en los <b>case que siguen.</b>
+                </p>
+                <div class="img">
+                    <img src="./img/img_005.png" alt="">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            &copy; Copyrights 2021 - <b>Desing by Alex :3</b>
+        </p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

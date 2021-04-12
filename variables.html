@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="aside-menu" id="aside-menu">
+        <div class="enlaces">
+            <a href="./index.html">Inicio</a>
+            <a href="#">Variables</a>
+            <a href="./datos.html">Datos</a>
+            <a href="./operadores.html">Operadores</a>
+            <a href="./condicionales.html">Condicionales</a>
+            <a href="./bucles.html">Bucles</a>
+            <a href="./funciones.html">Funciones</a>
+            <a href="./arrays.html">Arrays</a>
+            <a href="./objetos.html">Objetos</a>
+        </div>
+    </div>
+    <header>
+        <div class="sub-header">
+            <button class="abrir" type="button" id="btn-menu-abrir" onclick="abrir()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="cerrar" type="button" id="btn-menu-cerrar" onclick="cerrar()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="todo2">
+
+        <div class="seccion">
+            <h2 class="titulo">Declaraciones de variables</h2>
+            <p>
+                Las variables se usan como nombres simbolicos para valores en tu aplicación.
+                Los nombres de las variables, llamados identificadires, se rigen por ciertas reglas.
+                <br>
+                Un identificador en js tiene que empezar por una letras, un guión bajo <b>_</b> o un simbolo
+                 de <b>$</b>, los valores subsiguientes pueden ser números.
+                <br>
+                Javascript diferencia entre mayúsculas y minúsculas, por lo tanto las letras incluyen
+                 desde la "A" a la "Z" y desde la "a" a la "z".
+            </p> <br>
+            <p>Hay 3 tipos de declaraciones en Javascript
+                <br><br>
+                <b>var: </b>Declara una variable, inicianizándola opcionalmente a un valor. Podrá cambiar 
+                su valor y su scope es local.
+                <br>
+                <b>let: </b>Declara una variable local en un bloque de ámbito, inicianizándola opcionalmente
+                a un valor. Podrá cambiar su valor.
+                <br>
+                <b>const: </b>Declara una variable de sólo lectura en un bloque de ámbito. No será posible
+                cambiar su valor mediante la asignación.
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Ámbito de una variable</h2>
+            <p>
+                Cuando declaras una variable fuera de una función, se le denomina <b>variable global</b>, 
+                por que esta disponible para cualquier otro código en el documento actual.
+                <br>
+                Cuando declaras una variable dentro de la función, se le denomina <b>variable local</b>,
+                 porque está disponible solo dentro de esa función donde fue creada. 
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h2 class="titulo">Variable hoisting</h2>
+            <p>
+                Las variables en Javascript pueden hacer referencia a una variable declarada más tarde.
+                 Este concepto se le conoce como <b>hoisting</b>.
+                 <br>
+                Las variables son "elevadas" a la parte superior de la función o la declaración. <br>
+                Las variables que no se han inicializado todavia devolveran un valor <b>undefined</b>.
+            </p>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>
+            &copy; Copyrights 2021 - <b>Desing by Alex :3</b>
+        </p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
